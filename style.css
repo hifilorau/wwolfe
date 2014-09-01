@@ -1,0 +1,55 @@
+
+.nav {
+	display: -webkit-flex;
+	-webikit-flex-direction: row;
+	-webkit-justify-content: space-between;
+	background-color: black;
+	margin: 0px;
+}
+
+.nav li:first-child {
+	margin-right: auto;
+}	
+
+.nav li {
+	-webkit-flex-grow: 1;
+	list-style-type: none;
+	padding: 1%;
+}
+
+.nav li a {
+	text-decoration: none;
+	/*padding: 5px;*/
+}
+
+
+.col {
+	-webkit-flex: 1;
+ }
+
+.main {
+	clear: both;
+	text-align: center;
+}
+
+p {
+	max-width: 70%;
+
+}
+
+/****************************
+PAGE COLORS STYLINGS
+****************************/
+
+
+/****************************
+FONT STYLINGS
+****************************/
+
+
+.nav li a {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+}
+
