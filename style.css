@@ -1,9 +1,18 @@
+/*****************************
+Header
+*****************************/
+header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
 
 .nav {
 	display: -webkit-flex;
 	-webikit-flex-direction: row;
 	-webkit-justify-content: space-between;
 	margin: 0px;
+	min-height: 70px;
 }
 
 .nav li:first-child {
@@ -11,46 +20,279 @@
 }	
 
 .nav li {
-	list-style-type: none;
-	padding: 1%;
+	padding: 2%;
+	margin-right: 10px;
 }
 
 .nav li a {
-	text-decoration: none;
-	/*padding: 5px;*/
+	float: left;
+	padding: 5px;
+}
+
+.nav a.selected {
+	color: yellow;
+}
+
+a {
+text-decoration: none;
+}
+
+li {
+list-style-type: none;
 }
 
 
-.col {
-	-webkit-flex: 1;
- }
+
+/*****************************
+Body
+*****************************/
+
+html {background: url(images/background1.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	}
 
 .main {
-	clear: both;
-	text-align: center;
+	width: 100%;
+	margin: 0;
+	height: 100%;
 }
+
+
+/****************************
+top section
+****************************/
+.sec-top {
+	min-height: 700px;
+	margin-top: 200px; 
+}
+
+#logowrapper {
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+#wwlogo {
+	font-size: 3em;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	font-family: Georgia;
+	margin-top: 40px;
+}
+
+.logonav {
+	display: -webkit-flex;
+	-webikit-flex-direction: row;
+	-webkit-justify-content:space-between;
+
+}
+
+.logonav li {
+	list-style-type: none;
+	margin: 0 0 0 -10%;
+
+}
+
+.logonav li a {
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	  display: inline-block;
+	  -webkit-transition-duration: 0.3s;
+	  transition-duration: 0.3s;
+	  -webkit-transition-property: -webkit-transform;
+	  transition-property: transform;
+	  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	  -webkit-transform: translateZ(0);
+	  -ms-transform: translateZ(0);
+	  transform: translateZ(0);
+	  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+}
+
+.logonav li a:hover {
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	-webkit-transform: scale(1.1);
+ 	-ms-transform: scale(1.1);
+  	transform: scale(1.1);
+}
+
+
+/****************************
+Main boxes
+****************************/
+
+
+.sectwrapper {
+	padding: 8% 0%;
+}
+
+
+.sectawrapper, .sectcwrapper {
+	background-color: white;
+	height:100%;
+}
+
 
 p {
-	max-width: 70%;
-
+	margin: 0 auto;
+	max-width: 75%;
+	padding: 1.5em;
+	text-align: center; 
 }
+
+
+
+/****************************
+Footer 
+****************************/
+
+footer {display: -webkit-flex;
+	-webikit-flex-direction: row;
+	-webkit-justify-content: space-between;
+	margin: 0px;
+	min-height: 125px;
+	width: 100%;
+}
+
+footer {
+	background-color: black;
+	opacity: .8;
+}
+
+
+.footernav li {
+	text-align: left;
+}
+
+.footernav li a {
+	color: white;
+	font-family: georgia, times, serif;
+}
+
 
 /****************************
 PAGE COLORS STYLINGS
 ****************************/
 
 .nav {
-
 	background-color: black;
+	opacity: .8;
 }
+
+
+
 /****************************
 FONT STYLINGS
 ****************************/
 
-
 .nav li a {
 	color: white;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.2em;
+	font-family: Georgia, serif;
+	font-size: 1.0em;
 }
+
+.nav li:first-child {
+	font-size: 1.33em;
+}
+
+p {
+	font-family: Georgia, Times, serif;
+	font-size: 2.25em;
+	line-height: 1.5em;
+	letter-spacing: .075em
+}
+
+.sec-b {
+	color: white;
+}
+
+.sectionlink, .sectionlinkwhite {
+	font-family: georgia;
+	font-style: italic;
+	font-weight: 800;
+	padding: 7px 25px;
+	border-style: solid;
+	margin-left: 45%;
+}
+
+.sectionlinkwhite {
+	color: white;
+}
+
+.sectionlink {
+	color: black;
+}
+
+/****************************
+CONTACT PAGE
+****************************/
+
+#contactwords {
+	margin-top: 70px;
+	padding: 10% 0%;
+}
+
+
+.bodywrapper {
+	background: white;
+	z-index: 20;
+
+}
+
+#map_canvas {
+        width: 85%;
+        height: 300px;
+        margin: 10% auto 10%;
+    }
+
+#contactinfowrapper{
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+#contact-info {
+	text-align: center;
+	display: -webkit-flex;
+	-webikit-flex-direction: row;
+	-webkit-justify-content: space-between;
+}
+
+#contact-info li a {
+	font-family: arial;
+	color: black;
+	font-weight: 800;
+	-webkit-transition-duration: 0.3s;
+	  transition-duration: 0.3s;
+	  -webkit-transition-property: -webkit-transform;
+	  transition-property: transform;
+	  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	  -webkit-transform: translateZ(0);
+	  -ms-transform: translateZ(0);
+	  transform: translateZ(0);
+	  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+#contact-info li a:hover {
+	-webkit-transform: scale(1.1);
+ 	-ms-transform: scale(1.1);
+  	transform: scale(1.1);
+}
+
+	
+
+
+/****************************
+Small Device
+****************************/
+
+/****************************
+Tablet
+****************************/
 
