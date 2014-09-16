@@ -16,28 +16,31 @@
          		 mapTypeId: google.maps.MapTypeId.ROADMAP
         		}
         		var map = new google.maps.Map(mapCanvas, mapOptions)
-      			}
-      		google.maps.event.addDomListener(window, 'load', initialize);
+
+        		var marker = new google.maps.Marker({
+        			position:  new google.maps.LatLng(35.9955391,-78.9021486), 
+        			map: map,
+        			title: "American Underground@Main/Winston Wolfe HQ"
+        		});
+        		}
+      			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
 	</head>
 
 
-<body class="bodywrapper">
+<body class="bodywrapper wrapper">
 		<header>
 				<ul class="nav">
 					<li><a href="index.html" id="logo">Winston Wolfe</a></li>
 					<li><a href="index.html">About</a></li>
 					<li><a href="work.html">Our Work</a></li>
-					<li><a href="words.html">Words</a></li>
+					<li><a href="Process.html">Words</a></li>
 					<li><a href="contact.html" class="selected">Contact</a></li>
 				</ul>
 		</header>
 
 		
 		<div class="main">
-			<section id="contactwords">
-				<p>We are located in the heart of Durham, NC, inside of the American Underground tech hub. <br> Come visit, or just get in touch!</p>
-			</section>
 			<section id="information">
 				<div id="contactinfowrapper">
 					<ul id="contact-info">
@@ -48,6 +51,10 @@
 					</ul>
 				</div>
 			</section>
+			<section id="contactwords">
+				<p>We are located in the heart of Durham, NC, inside of the American Underground tech hub. <br> Come visit, or just get in touch!</p>
+			</section>
+			
 
 		<div id="map_canvas"></div>
 		

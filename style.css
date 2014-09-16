@@ -3,7 +3,6 @@ Header
 *****************************/
 header {
 	width: 100%;
-	position: absolute;
 	top: 0;
 }
 
@@ -11,6 +10,7 @@ header {
 	display: -webkit-flex;
 	-webikit-flex-direction: row;
 	-webkit-justify-content: space-between;
+	-webikit-flex-wrap: wrap;
 	margin: 0px;
 	min-height: 70px;
 }
@@ -46,33 +46,42 @@ list-style-type: none;
 /*****************************
 Body
 *****************************/
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
 
 html {background: url(images/background1.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 100%;
 	}
 
-.main {
+.wrapper {
 	width: 100%;
-	margin: 0;
-	height: 100%;
+	margin: 0 auto -155px;
+	min-height: 100%;
 }
 
+body {
+	padding: 0;
+}
 
 /****************************
 top section
 ****************************/
 .sec-top {
-	min-height: 700px;
-	margin-top: 200px; 
+	height: 100vh; 
 }
+
 
 #logowrapper {
 	max-width: 350px;
-	margin: 0 auto;
+	margin: 250px auto 0;
 }
 
 #wwlogo {
@@ -131,6 +140,7 @@ Main boxes
 
 .sectwrapper {
 	padding: 8% 0%;
+	top: 40%;
 }
 
 
@@ -153,22 +163,29 @@ p {
 Footer 
 ****************************/
 
-footer {display: -webkit-flex;
-	-webikit-flex-direction: row;
-	-webkit-justify-content: space-between;
-	margin: 0px;
-	min-height: 125px;
+footer {
+	min-height: 155px;
 	width: 100%;
 }
 
 footer {
 	background-color: black;
-	opacity: .8;
+	text-align: center;
+}
+
+.push {
+	height: 10em;
 }
 
 
-.footernav li {
-	text-align: left;
+.footernav {
+	display: -webkit-flex;
+     -webkit-flex-direction: row;
+     -webkit-justify-content: space-around;
+     -webkit-flex-wrap: wrap;
+	margin: 0;
+	padding: 5% 0 0 0;
+
 }
 
 .footernav li a {
@@ -217,9 +234,10 @@ p {
 	font-family: georgia;
 	font-style: italic;
 	font-weight: 800;
-	padding: 7px 25px;
+	padding: 7px 35px;
 	border-style: solid;
-	margin-left: 45%;
+	margin-left: -1%;
+
 }
 
 .sectionlinkwhite {
@@ -235,8 +253,8 @@ CONTACT PAGE
 ****************************/
 
 #contactwords {
-	margin-top: 70px;
-	padding: 10% 0%;
+	margin: 0px;
+	padding: 0%;
 }
 
 
@@ -254,7 +272,7 @@ CONTACT PAGE
 
 #contactinfowrapper{
 	max-width: 70%;
-	margin: 0 auto;
+	margin: 100px auto 0;
 }
 
 #contact-info {
@@ -286,13 +304,36 @@ CONTACT PAGE
 }
 
 	
-
-
 /****************************
 Small Device
 ****************************/
+@media only screen and (min-width:200px) and (max-width:420px) {
+	p {
+		font-size: .9em;
+		max-width: 85%;
+		margin: 10px;
+	}
+
+	.sectionlink, .sectionlinkwhite {
+		font-size: 10px;	
+	}
+}
+
 
 /****************************
 Tablet
 ****************************/
+@media only screen and (min-width:421px) and (max-width:678px) {
+	
+	p {font-size: 1.5em;
+	}
+
+	.sectionlink, .sectionlinkwhite {
+		font-size: 14px;
+	}
+
+
+
+}
+
 
