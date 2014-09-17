@@ -52,6 +52,7 @@ Body
 
 html, body {
 	height: 100%;
+	width: 100%
 }
 
 html {background: url(images/background1.jpg) no-repeat center center fixed;
@@ -63,7 +64,6 @@ html {background: url(images/background1.jpg) no-repeat center center fixed;
 
 .wrapper {
 	width: 100%;
-	margin: 0 auto -155px;
 	min-height: 100%;
 }
 
@@ -76,6 +76,7 @@ top section
 ****************************/
 .sec-top {
 	height: 100vh; 
+	width: 100%;
 }
 
 
@@ -141,12 +142,14 @@ Main boxes
 .sectwrapper {
 	padding: 8% 0%;
 	top: 40%;
+	width: 100%;
 }
 
 
 .sectawrapper, .sectcwrapper {
 	background-color: white;
 	height:100%;
+	width: 100%;
 }
 
 
@@ -155,6 +158,16 @@ p {
 	max-width: 75%;
 	padding: 1.5em;
 	text-align: center; 
+}
+
+.sectionbuttonbot {
+	width: 100%;
+	margin-left: 44%;
+}
+
+/* hides the top tab on smaller screens */
+.sectionbuttontop {
+	display: none;
 }
 
 
@@ -188,11 +201,14 @@ footer {
 
 }
 
-.footernav li a {
+#copywrite, .footernav li a {
 	color: white;
 	font-family: georgia, times, serif;
 }
 
+#copywrite {
+	margin-top: 50px;
+}
 
 /****************************
 PAGE COLORS STYLINGS
@@ -236,8 +252,6 @@ p {
 	font-weight: 800;
 	padding: 7px 35px;
 	border-style: solid;
-	margin-left: -1%;
-
 }
 
 .sectionlinkwhite {
@@ -260,7 +274,6 @@ CONTACT PAGE
 
 .bodywrapper {
 	background: white;
-	z-index: 20;
 
 }
 
@@ -308,6 +321,16 @@ CONTACT PAGE
 Small Device
 ****************************/
 @media only screen and (min-width:200px) and (max-width:420px) {
+	
+	.sectionbuttonbot {
+		display:none;
+	}
+
+	.sectionbuttontop {
+		display:inline-block;
+		margin-left: -5px;
+	}
+
 	p {
 		font-size: .9em;
 		max-width: 85%;
@@ -331,9 +354,6 @@ Tablet
 	.sectionlink, .sectionlinkwhite {
 		font-size: 14px;
 	}
-
-
-
 }
 
 
