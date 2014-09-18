@@ -30,7 +30,7 @@ header {
 }
 
 .nav a.selected {
-	color: yellow;
+	color: gray;
 }
 
 a {
@@ -187,7 +187,7 @@ footer {
 }
 
 .push {
-	height: 10em;
+	height: 9em;
 }
 
 
@@ -207,9 +207,26 @@ footer {
 }
 
 #copywrite {
-	margin-top: 50px;
+	margin-top: 40px;
 }
 
+.socialicons {
+	display: -webkit-flex;
+     -webkit-flex-direction: row;
+     -webkit-justify-content: flex-start;
+     -webkit-flex-wrap: wrap;
+     margin: 10px 0 0 -10px;
+
+}
+
+.socialicons a {
+	padding: 1px;
+}
+
+.socialicons img {
+	max-height: 65%;
+	max-width: 65%;
+}
 /****************************
 PAGE COLORS STYLINGS
 ****************************/
@@ -366,6 +383,10 @@ Tablet
 
 	.sectionlink, .sectionlinkwhite {
 		font-size: 14px;
+	}
+
+	.sectionbuttonbot {
+		margin-left: 40%;
 	}
 }
 
