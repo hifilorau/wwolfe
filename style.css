@@ -285,18 +285,18 @@ CONTACT PAGE
 
 #contactinfowrapper{
 	max-width: 70%;
-	margin: 100px auto 0;
+	margin: 0 auto ;
 }
 
 #contact-info {
-	text-align: center;
 	display: -webkit-flex;
 	-webikit-flex-direction: row;
+	-webkit-flex-wrap: wrap;
 	-webkit-justify-content: space-between;
 }
 
 #contact-info li a {
-	font-family: arial;
+	font-family: aerial;
 	color: black;
 	font-weight: 800;
 	-webkit-transition-duration: 0.3s;
@@ -315,6 +315,19 @@ CONTACT PAGE
  	-ms-transform: scale(1.1);
   	transform: scale(1.1);
 }
+
+.mail {
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-flex
+}
+
+.address {
+	font-family: aerial;
+	color: black;
+	font-weight: 800;
+}
+
 
 	
 /****************************
