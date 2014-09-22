@@ -13,6 +13,7 @@ header {
 	-webikit-flex-wrap: wrap;
 	margin: 0px;
 	min-height: 70px;
+
 }
 
 .nav li:first-child {
@@ -149,7 +150,6 @@ Main boxes
 .sectawrapper, .sectcwrapper {
 	background-color: white;
 	height:100%;
-	width: 100%;
 }
 
 
@@ -187,7 +187,6 @@ footer {
 }
 
 .push {
-	max-height: 5em;
 	background-color: white;
 }
 
@@ -204,7 +203,8 @@ footer {
 
 #copywrite, .footernav li a {
 	color: white;
-	font-family: georgia, times, serif;
+	font-family: Helvetica, times, serif;
+	letter-spacing: .2em
 }
 
 #copywrite {
@@ -222,6 +222,7 @@ footer {
 
 .socialicons a {
 	padding: 1px;
+
 }
 
 .socialicons img {
@@ -232,7 +233,7 @@ footer {
 .vline {
 	border-left: 1px solid;
 	border-color: white;
-	padding-left: 8.5%;
+	padding-left: 7.5%;
 }
 
 /****************************
@@ -241,7 +242,7 @@ PAGE COLORS STYLINGS
 
 .nav {
 	background-color: black;
-	opacity: .8;
+	opacity: .9;
 }
 
 
@@ -254,7 +255,8 @@ FONT STYLINGS
 	color: white;
 	font-family: Helvetica, sans-serif;
 	font-size: 1.0em;
-	letter-spacing: .3em
+	letter-spacing: .3em;
+	font-weight: 200;
 }
 
 .nav li:first-child {
@@ -262,10 +264,11 @@ FONT STYLINGS
 }
 
 p {
-	font-family: Georgia, Times, serif;
+	font-family: 'Nixie One', Georgia, serif;
 	font-size: 2.25em;
 	line-height: 1.5em;
-	letter-spacing: .075em
+	letter-spacing: .08em;
+	font-weight: 100;
 }
 
 .sec-b {
@@ -274,11 +277,11 @@ p {
 
 .sectionlink, .sectionlinkwhite {
 	font-family: helvetica, sans-serif;
-	font-style:;
-	font-weight: 800;
+	font-weight: 400;
 	padding: 7px 35px;
-	border-style: solid;
-	letter-spacing: .2em
+	border: solid 1.5px;
+	border-radius: 3px;
+	letter-spacing: .1em
 }
 
 .sectionlinkwhite {
@@ -299,6 +302,7 @@ CONTACT PAGE
 }
 
 #contactwords p {
+	font-family: 'Nixie One', Georgia, serif;
 	border-bottom: solid 1px;
 
 }
@@ -337,9 +341,12 @@ CONTACT PAGE
 	-webkit-justify-content: space-between;
 }
 
+/******
 .contactlink{
 	border-top: solid 1px;
-}
+********/
+
+
 
 #contact-info li a {
 	font-family: helvetica;
@@ -362,75 +369,155 @@ CONTACT PAGE
   	transform: scale(1.1);
 }
 
-.mail {
+.contacthead {
 	display: -webkit-flex;
 	-webkit-flex-direction: column;
-	-webkit-flex
 }
 
-
-
-
-	
 /****************************
-Small Device
+ABOUT PAGE
 ****************************/
-@media only screen and (min-width:200px) and (max-width:420px) {
-	
-	.sectionbuttonbot {
-		display:none;
-	}
 
-	.sectionbuttontop {
-		display:inline-block;
-		margin-left: -5px;
-	}
+#about2 {
+	background-color: white;
+	color: black;
+}
 
-	p {
-		font-size: .9em;
-		max-width: 85%;
-		margin: 10px;
-	}
+#about1 p, #about2 p {
+	font-size: 1.5em;
+	min-height: 50vh;
+	padding: 6.5em;
+}
 
-	.sectionlink, .sectionlinkwhite {
-		font-size: 10px;	
-	}
+#about1 {
+	background-color: black;
+	color: white;
+}
 
-	.vline {
-		padding-left: 0%;
-		border: none;
-	}
+/****************************
+WORK PAGE
+****************************/
 
-	.socialicons {
-		margin-left: -8%;
-	}
+#ourclients {
+	background-color: white;
+	background-size: cover;
+}
+
+#ourclients p {
+	padding-top: 2em;
+}
+
+#clientlogosection {
+	min-height: 25vh;
+	width: 100%;
+	background-color: white;
+
+}
+.clientlogolist {
+	display: -webkit-flex;
+	-webikit-flex-direction: row;
+	-webkit-justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	padding: 5%;
+}
+
+.clientlogo {
+	max-width: 300px;
+	height: auto;
+}
+
+#tmlogo {
+	margin-top: -20%;
+}
+
+#testimonials p {
+	color: white;
+	padding-top: 2em;
+	padding-bottom: 1.5em;
+	font-size: 1.5em;
+	font-style: italic;
 }
 
 
 /****************************
 Tablet
 ****************************/
-@media only screen and (min-width:421px) and (max-width:678px) {
-	
-	p {font-size: 1.5em;
+
+@media only screen and (max-width:800px) {
+
+	p {
+		font-size: 1.5em;
+		}
+
+		.sectionlink, .sectionlinkwhite {
+			font-size: 14px;
+		}
+
+		.sectionbuttonbot {
+			margin-left: 40%;
+		}
+
+		.socialicons {
+			margin-left: -4%;
+
+		}
+
+		.vline {
+			padding-left: 4%;
+		}
+
+		#tmlogo {
+		margin-top: 30px;
+		}
+
+	#ourclients p {
+		font-size: 1.3em;
 	}
 
-	.sectionlink, .sectionlinkwhite {
-		font-size: 14px;
-	}
-
-	.sectionbuttonbot {
-		margin-left: 40%;
-	}
-
-	.socialicons {
-		margin-left: -4%;
-
-	}
-
-	.vline {
-		padding-left: 4%;
-	}
 }
+/****************************
+Small Device
+****************************/
+@media only screen and (max-width:420px) {
 
+		.nav {
+			flex-flow: column wrap; 
+		}
 
+		.sectionbuttonbot {
+			display:none;
+		}
+
+		.sectionbuttontop {
+			display:inline-block;
+			margin-left: -5px;
+		}
+
+		p {
+			font-size: .9em;
+			max-width: 85%;
+			margin: 10px;
+		}
+
+		.sectionlink, .sectionlinkwhite {
+			font-size: 10px;	
+		}
+
+		.vline {
+			padding-left: 0%;
+			border: none;
+		}
+
+		.socialicons {
+			margin-left: -8%;
+		}
+
+		#tmlogo {
+		margin-top: 30px;
+	}
+
+	#ourclients p {
+		font-size: 1em;
+	}
+
+}
