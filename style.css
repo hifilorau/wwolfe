@@ -155,7 +155,7 @@ Main boxes
 
 p {
 	margin: 0 auto;
-	max-width: 75%;
+	max-width: 70%;
 	padding: 1.5em;
 	text-align: center; 
 }
@@ -249,6 +249,9 @@ PAGE COLORS STYLINGS
 
 footer {
 	background: url(images/background2.jpg) no-repeat center center fixed;
+	background-size: cover;
+	border-top-style: solid;
+	border-top-color: #716573;
 }
 
 
@@ -302,10 +305,12 @@ p {
 CONTACT PAGE
 ****************************/
 
-
+#contactwords {
+	min-height: 40vh;
+}
 #contactwords p {
 	font-family: 'Nixie One', Georgia, serif;
-	border-bottom: solid 1px;
+	padding-top: 120px;
 
 }
 
@@ -320,7 +325,8 @@ CONTACT PAGE
 #information {
 	background: url(images/background2.jpg) no-repeat center center fixed;
 	width: 100%;
-	min-height: 30vh;
+	min-height: 40vh;
+	background-size: cover;
 }
 
 .contactlink {
@@ -331,19 +337,21 @@ CONTACT PAGE
  #mapcontainer {
  	background-color: white;
  	display: cover;
- 	min-height: 100px;
+ 	min-height: 40vh;
  	padding: 0px 0 100px 0;
  	width: 100%;
  }
 
  #address a {
-	margin-left: 28%;
 	width: auto;
+	color: black;
 }
 
 
 #address {
 	padding-top: 40px;
+	max-width: 50%;
+	text-align: left;
 }
 
 #map_canvas {
@@ -398,26 +406,31 @@ CONTACT PAGE
 }
 
 #address {
-	margin: 0 auto 6%;
+	margin: 0 auto 2%;
 }
 
 /****************************
 ABOUT PAGE
 ****************************/
+.about1 {
+	min-height: 100vh;
+}
 
 .about2 {
 	background-color: white;
 	color: black;
+	min-height: 90vh;
 }
 
-.about1 p, .about2 p, .process1 p{
-	font-size: 1.5em;
-	padding: 5em 0 5em 0;
+.about1 p, .about2 p, .process1 p {
+	font-size: 2em;
+	padding: 15% 0 5em 0;
 }
 
 .about1 {
 	background: url(images/background2.jpg) no-repeat center center fixed;
 	color: white;
+	background-size: cover;
 }
 
 .aboutmain #workmain {
@@ -425,8 +438,7 @@ ABOUT PAGE
 	background-color: black;
 }
 
-.processmain {
-}
+
 
 
 /****************************
@@ -444,9 +456,9 @@ WORK PAGE
 }
 
 #clientlogosection {
-	min-height: 25vh;
-	width: 100%;
+	width: 65%%;
 	background-color: white;
+	margin: 0 auto;
 
 }
 .clientlogolist {
@@ -466,13 +478,24 @@ WORK PAGE
 	margin-top: -25%;
 }
 
+
 #testimonials p {
-	color: white;
 	padding-top: 2em;
 	padding-bottom: 1.5em;
 	font-size: 1.5em;
 	font-style: italic;
+	color: white;
+	max-width: 65%;
 }
+
+#testimonials {
+	background:url(images/background2.jpg) no-repeat center center fixed;
+	min-width: 100%;
+	background-size: cover;
+}
+
+
+
 
 /****************************
 PROCESS PAGE
@@ -487,7 +510,20 @@ PROCESS PAGE
 	background: url(images/background2.jpg) no-repeat center center fixed;
 	color: white;
 	height: 100%;
+	background-size: cover;
 }
+
+/****************************
+Super large
+****************************/
+
+@media only screen and (min-width:1000px) {
+	p {
+		width :60%;
+	}
+}
+
+
 /****************************
 Tablet
 ****************************/
@@ -554,10 +590,11 @@ Small Device
 			border: none;
 		}
 
-		.socialicons {
-			margin: 0 auto;
-
+		.socialicons{
+			-webkit-justify-content: center;
+			margin-left: -37px;
 		}
+
 
 
 		#tmlogo {
@@ -584,5 +621,7 @@ Small Device
 		.footernav {
 			flex-flow: column wrap; 
 		}
+
+
 
 }
